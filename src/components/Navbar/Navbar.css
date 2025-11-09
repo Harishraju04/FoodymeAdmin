@@ -4,12 +4,38 @@
     align-items: center;
     padding: 8px 4%;
 }
+
+/* Logo hover */
 .navbar .logo{
     width: max(10%,80px);
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+.navbar .logo:hover{
+    transform: scale(1.05);
+    opacity: 0.85;
+}
+
+/* Profile hover */
 .navbar .profile{
     width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
 }
+
+.navbar .profile:hover{
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+
+/* Login hover */
 .login-conditon{
     font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.login-conditon:hover{
+    color: #555;        /* change to your theme color */
+    transform: translateY(-2px);
 }
